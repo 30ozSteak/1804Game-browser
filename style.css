@@ -1,0 +1,421 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Actor', sans-serif;
+}
+
+a:hover, i:hover{
+  cursor: pointer;
+}
+
+a{
+  color: white;
+}
+
+
+/* ======================== HEADER */
+
+
+header {
+  background: 
+    linear-gradient(
+      rgba(0, 6, 17, 0.815),
+      rgba(0, 9, 26, 0.815)),
+    url(img/banner.jpg);
+    background-size: cover;
+    color: white;
+  height: 9rem;
+}
+
+.logo-text-top{
+  text-transform: uppercase;
+}
+
+header span{
+    background: -webkit-linear-gradient(rgb(0, 147, 192), rgb(71, 197, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-content {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 20rem 1fr 20rem;
+  padding-top: 3.5rem;
+}
+
+.logo h3{
+  font-size: 1.5rem;
+}
+
+.logo h3 span{
+  text-shadow: 2px 1px 25px rgba(0, 183, 255, 0.698);
+}
+
+.logo-text-bottom{
+  position: relative;
+}
+
+.logo-text-bottom::before{
+  background: rgb(0, 174, 255);
+  bottom: 40%;
+  content: '';
+  height: 10%;
+  left: 30%;
+  position: absolute;
+  transition: .5s;
+  width: 70%;
+}
+
+input{
+  background-color: rgba(41, 41, 41, 0.753);
+  border: none;
+  padding: 1rem;
+  width: 30rem;
+}
+
+input::placeholder{
+  color: rgb(144, 144, 144);
+}
+
+.btn{
+  background: none;
+  box-sizing: border-box;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.sign-up{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(6,74,164,1) 0%, rgba(0,212,255,1) 66%);
+  border: none;
+  margin-left: 2rem;
+  transition: .2s
+}
+
+.sign-up:hover{
+  box-shadow: 1px 0px 50px rgba(0, 195, 255, 0.63);
+}
+
+/* ======================== NAV */
+
+
+.active{
+  background: -webkit-linear-gradient(rgb(0, 147, 192), rgb(71, 197, 255));
+  border: none;
+  box-shadow: 1px 0px 10px rgba(0, 195, 255, 0.63);
+}
+
+nav{
+  background-color: rgb(20, 20, 20);
+  border-bottom: 3px solid rgba(0,212,255,1);
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+nav a{
+  color: white;
+  padding: 16px 15px ;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: rgb(46, 46, 46);
+}
+
+.nav-links{
+  margin-left: 3.5rem;
+}
+
+/* ======================== HERO */
+
+.hero-section{
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.664),
+    rgba(0, 11, 31, 0.685)),
+    url(img/nyc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 50rem 1fr;
+  height: 75vh;
+  text-transform: uppercase;
+}
+
+.hero-section-literal{
+  color: white;
+  margin-top: 20rem;
+  text-shadow: 2px 3px 10px black;
+}
+
+.hero-section-literal h1{
+  color: white;
+  font-size: 3rem;
+}
+
+.supported-browsers h3{
+  margin-top: 2rem;
+}
+
+.hero-section-literal li{
+  display: block;
+  list-style-type: none;
+  float: left;
+  font-size: 3rem;
+  margin-right: 2rem;
+  margin-top: .5rem;
+  transition: .2s;
+}
+
+.hero-section-literal li:hover{
+  cursor: pointer;
+  text-shadow: 2px 1px 25px rgba(195, 195, 195, 0.698);
+}
+
+.right a{
+  color: white;
+  margin-left: 30rem;
+}
+
+.made-by a{
+  color: white;
+  text-decoration: none;
+}
+
+.made-by a:hover{
+  color: rgb(0, 162, 255);
+}
+
+.bracket{
+  color: rgb(0, 162, 255);
+}
+
+.fa-github:hover{
+  animation: morphingLogo 3s linear infinite;
+  color: rgb(239, 120, 255);
+}
+
+@keyframes morphingLogo {
+  0% {
+    filter: hue-rotate(-90deg);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(-90deg);
+  }
+}
+
+.play-now a{
+  color: rgb(0, 162, 255);
+}
+
+.right-side-pop-up i{
+  color: white;
+  font-size: 3rem;
+  margin-top: 20rem;
+  margin-left: 5rem;
+}
+
+.right-side-pop-up i:hover{
+  color:  rgb(0, 162, 255);
+  font-size: 3rem;
+  margin-top: 20rem;
+  margin-left: 5rem;
+}
+
+/* ======================== Bottom Divider */
+
+.divider{
+  background: 
+  linear-gradient(
+    rgba(0, 6, 17, 0.815),
+    rgba(0, 9, 26, 0.815)),
+  url(img/grungy.jpg);
+  border-top: 3px solid rgba(0,212,255,1);
+  border-bottom: 3px solid rgba(0,212,255,1);
+  height: 20rem;
+  padding-top: 2.5rem;
+}
+
+.game-image-divider{
+  height: 15rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.game-video{
+  color: rgba(255, 255, 255, 0.664);
+  text-align: center;
+}
+
+.game-video i{
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.gv1{
+  background: 
+  linear-gradient(
+    rgba(0, 6, 17, 0.657),
+    rgba(0, 9, 26, 0.246)),
+    center url(img/snake.jpg);
+    border: 1px solid black;
+}
+
+.gv2{
+  background:   
+  linear-gradient(
+    rgba(0, 6, 17, 0.657),
+    rgba(0, 9, 26, 0.246)),
+    center url(img/tron1.jpg);
+  border: 1px solid black;
+}
+
+.gv3{
+  background:   
+  linear-gradient(
+    rgba(0, 6, 17, 0.657),
+    rgba(0, 9, 26, 0.246)),
+    center url(img/anaconda.jpg);
+  border: 1px solid black;
+}
+
+.gv4{
+  background:   
+  linear-gradient(
+    rgba(0, 6, 17, 0.657),
+    rgba(0, 9, 26, 0.246)),
+    center url(img/frogger.jpg);
+  border: 1px solid black;
+}
+
+.game-video{
+  transition: .4s;
+}
+
+.game-video:hover{
+  filter:brightness(150%);
+  cursor: pointer;
+}
+
+.hero-slider-button{
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 25rem;
+  text-align: center;
+}
+
+.hero-slider-button i:hover{
+  color:  rgb(0, 162, 255);
+}
+
+/* ======================== BOTTOM HALF */
+
+.bottom-half{
+  background-color: rgb(20, 20, 20);
+  color: white;
+  text-align: left;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 15rem 30rem 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  width: 60rem;
+}
+
+/* ======================== REVIEWS */
+
+.news h1{
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.screenshots{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.screenshot1{
+  background: center url(img/escape.jpg);
+
+}
+.screenshot2{
+  background: center url(img/tron.jpg);
+  background-size: cover;
+
+}
+.screenshot3{
+  background: center url(img/missile.jpg);
+}
+
+.screenshot4{
+  background: center url(img/snake2.jpg);
+  background-size: cover;
+}
+
+.articles{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 1rem;
+}
+
+.news-article1,
+.news-article2,
+.news-article3,
+.news-article4{
+  margin-top: 3rem;
+}
+
+.articles p{
+  color: grey;
+}
+
+.more{
+  color:  rgb(0, 162, 255);
+  cursor: pointer;
+}
+
+.social-icons i{
+  color: rgb(0, 162, 255);
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+/* ======================== SCORES */
+
+.scores{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+}
+
+.scores h1{
+  color: rgb(0, 162, 255);
+  font-size: 7rem;
+}
+
+/* ======================== FOOTER*/
+
+footer{
+  text-align: center;
+}
+
+footer i{
+  margin: 2rem 0;
+  font-size: 3rem;
+  padding-right: 3rem;
+}
