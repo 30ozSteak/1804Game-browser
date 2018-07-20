@@ -225,10 +225,26 @@ nav a:hover{
 }
 
 .right-side-pop-up i:hover{
-  color:  rgb(0, 162, 255);
+  color:  rgb(63, 185, 255);
   font-size: 3rem;
   margin-top: 20rem;
   margin-left: 5rem;
+}
+/* ======================== Scores Before */
+
+
+.scores{
+  position: relative;
+}
+
+.scores:before{
+  content: 'SCORES';
+  position: absolute;
+  color:  rgb(0, 162, 255);
+  font-size: 2rem;
+  width: 100%;
+  top: -2rem;
+  height: 10%;
 }
 
 /* ======================== Bottom Divider */
@@ -299,7 +315,6 @@ nav a:hover{
   background-repeat: no-repeat;
 }
 
-
 .game-video{
   transition: .4s;
 }
@@ -347,21 +362,16 @@ nav a:hover{
 
 .screenshots{
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-gap: 2.5rem;
-}
-
-.screenshot1{
-  background: center url(img/escape.jpg);
-  position: relative;
-  overflow: hidden;
 }
 
 .screenshot1:before,
 .screenshot2:before,
 .screenshot3:before,
 .screenshot4:before,
-.screenshot5:before{
+.screenshot5:before,
+.screenshot6:before {
   content: '';
   position: absolute;
   width: 10%;
@@ -376,40 +386,54 @@ nav a:hover{
 .screenshot2:hover:before,
 .screenshot3:hover:before,
 .screenshot4:hover:before,
-.screenshot5:hover:before{
+.screenshot5:hover:before,
+.screenshot6:hover:before {
   left: 18rem;
+}
+
+.screenshot1,
+.screenshot2,
+.screenshot3,
+.screenshot4,
+.screenshot5,
+.screenshot6 {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.screenshot1{
+  background: center url(img/escape.jpg);
 }
 
 .screenshot2{
   background: center url(img/tron.jpg);
   background-size: cover;
-  position: relative;
-  overflow: hidden;
 }
 
 .screenshot3{
   background: center url(img/missile.jpg);
-  position: relative;
-  overflow: hidden;
+  background-size: cover;
 }
 
 .screenshot4{
   background: center url(img/snake2.jpg);
   background-size: cover;
-  position: relative;
-  overflow: hidden;
 }
 
 .screenshot5{
   background: center url(img/frogger.jpg);
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+}
+
+.screenshot6{
+  background: center url(img/samuel.jpg);
+  background-size: cover;
 }
 
 .articles{
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   padding-left: 1rem;
 }
 
@@ -417,7 +441,8 @@ nav a:hover{
 .news-article2,
 .news-article3,
 .news-article4,
-.news-article5{
+.news-article5,
+.news-article6 {
   margin-top: 3rem;
 }
 
@@ -425,7 +450,7 @@ nav a:hover{
   color: grey;
 }
 
-.more{
+.more {
   color:  rgb(0, 162, 255);
   cursor: pointer;
 }
@@ -440,7 +465,7 @@ nav a:hover{
 
 .scores{
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   margin-top: 2.5rem;
   margin-left: 3rem;
 }
