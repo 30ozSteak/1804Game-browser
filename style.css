@@ -5,12 +5,12 @@
   font-family: 'Actor', sans-serif;
 }
 
-a:hover, i:hover{
-  cursor: pointer;
-}
-
 a{
   color: white;
+}
+
+a:hover, i:hover{
+  cursor: pointer;
 }
 
 
@@ -25,7 +25,7 @@ header {
     url(img/banner.jpg);
     background-size: cover;
     color: white;
-  height: 9rem;
+    height: 9rem;
 }
 
 .logo-text-top{
@@ -33,9 +33,9 @@ header {
 }
 
 header span{
-    background: -webkit-linear-gradient(rgb(0, 147, 192), rgb(71, 197, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(rgb(0, 147, 192), rgb(71, 197, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header-content {
@@ -144,14 +144,15 @@ nav a:hover{
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 50rem 1fr;
-  height: 75vh;
   text-transform: uppercase;
+  padding-bottom: 3rem;
 }
 
 .hero-section-literal{
   color: white;
   margin-top: 20rem;
   text-shadow: 2px 3px 10px black;
+  display: none;
 }
 
 .hero-section-literal h1{
@@ -293,9 +294,12 @@ nav a:hover{
   linear-gradient(
     rgba(0, 6, 17, 0.657),
     rgba(0, 9, 26, 0.246)),
-    center url(img/frogger.jpg);
+    center url(img/frog.jpg);
   border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 
 .game-video{
   transition: .4s;
@@ -334,7 +338,7 @@ nav a:hover{
   width: 60rem;
 }
 
-/* ======================== REVIEWS */
+/* ======================== NEWS */
 
 .news h1{
   color: white;
@@ -344,7 +348,7 @@ nav a:hover{
 
 .screenshots{
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   grid-gap: 2.5rem;
 }
 
@@ -366,16 +370,22 @@ nav a:hover{
   background-size: cover;
 }
 
+.screenshot5{
+  background: center url(img/frogger.jpg);
+  background-size: cover;
+}
+
 .articles{
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   padding-left: 1rem;
 }
 
 .news-article1,
 .news-article2,
 .news-article3,
-.news-article4{
+.news-article4,
+.news-article5{
   margin-top: 3rem;
 }
 
@@ -398,7 +408,7 @@ nav a:hover{
 
 .scores{
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   margin-top: 2.5rem;
   margin-left: 3rem;
 }
@@ -414,8 +424,9 @@ footer{
   text-align: center;
 }
 
-footer i{
-  margin: 2rem 0;
-  font-size: 3rem;
-  padding-right: 3rem;
+footer i, 
+footer h6 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
 }
