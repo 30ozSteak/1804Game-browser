@@ -7,6 +7,7 @@
 
 a{
   color: white;
+  text-decoration: none;
 }
 
 a:hover, i:hover{
@@ -122,7 +123,6 @@ nav{
 nav a{
   color: white;
   padding: 16px 15px ;
-  text-decoration: none;
 }
 
 nav a:hover{
@@ -186,7 +186,6 @@ nav a:hover{
 
 .made-by a{
   color: white;
-  text-decoration: none;
 }
 
 .made-by a:hover{
@@ -354,25 +353,58 @@ nav a:hover{
 
 .screenshot1{
   background: center url(img/escape.jpg);
-
+  position: relative;
+  overflow: hidden;
 }
+
+.screenshot1:before,
+.screenshot2:before,
+.screenshot3:before,
+.screenshot4:before,
+.screenshot5:before{
+  content: '';
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.781);
+  transform: skew(-10deg);
+  left: -3rem;
+  transition: .4s
+}
+
+.screenshot1:hover:before,
+.screenshot2:hover:before,
+.screenshot3:hover:before,
+.screenshot4:hover:before,
+.screenshot5:hover:before{
+  left: 18rem;
+}
+
 .screenshot2{
   background: center url(img/tron.jpg);
   background-size: cover;
-
+  position: relative;
+  overflow: hidden;
 }
+
 .screenshot3{
   background: center url(img/missile.jpg);
+  position: relative;
+  overflow: hidden;
 }
 
 .screenshot4{
   background: center url(img/snake2.jpg);
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .screenshot5{
   background: center url(img/frogger.jpg);
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .articles{
@@ -429,4 +461,13 @@ footer h6 {
   text-align: center;
   font-size: 2rem;
   padding-top: 3rem;
+}
+
+.special-ty{
+  padding-top:3rem;
+  color: rgb(54, 54, 54); 
+}
+
+.wallpaper{
+  background-color: red
 }
