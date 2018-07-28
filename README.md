@@ -4,7 +4,7 @@
 The second project in mod-2 at Turing is Game Time, an adventure into Object Oriented Programming- and lots and lots of tests.
 Because of this projects nature, there wasn't a lot of front-end excitement. I dumped a few extra hours into developing a thematic design/page for the page that would host the game, and it was well received.
 
-After submitting the project and taking a step back- I wanted to do it better but I couldn't really justify dumping an extensive amount of time into something of so little content. This snake game, though cool in my eyes, doesn't have much going for it. It's two objects that have redamentary (and not even 100% working) collision detection, on a canvas. It feels like something hard to show off, without having to explain the context of it as well.
+After submitting the project and taking a step back- I wanted to do it better but I couldn't really justify dumping an extensive amount of time into something of so little content. This snake game, though cool in my eyes, doesn't have much going for it. It's two objects that have basic (and not even 100% working) collision detection, on a canvas. It feels like something hard to show off, without having to explain the context of it as well.
 
 I needed something more interesting and more diverse than a single game with two colors. Thankfully, I'm in a room with other talented devs that also just built their own games. I bothered these other humans to get their games hosted on GH pages and pushed up so I could use them as well. 
 
